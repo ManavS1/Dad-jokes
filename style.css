@@ -13,28 +13,27 @@ html {
 }
 
 body {
-  font-family: serif;
+  font-family: Arial, Helvetica, sans-serif;
   font-weight: 400;
   height: 100vh;
   width: 100vw;
   background-color: #dcdfe3;
-  padding: 0rem 10rem;
 }
 
-h3 {
+h1 {
   text-align: center;
+  font-size: 3.5rem;
   font-weight: 900;
-  padding: 0.5rem 0;
+  padding: 1rem 0;
   background-color: teal;
   color: whitesmoke;
 }
 
 .container {
   background-color: #4487cd;
-  padding: 0rem 1rem;
+  padding: 2rem 2rem;
   color: whitesmoke;
-  height: 10rem;
-  width: 100%;
+  width: 50%;
   display: flex;
   text-align: center;
   flex-direction: column;
@@ -51,16 +50,17 @@ h3 {
 .btn {
   background-color: #b025b9;
   border: none;
+  font-size: 2.5rem;
   color: #fff;
-  padding: 0.5rem 1rem;
+  padding: 1rem 2rem;
   border-radius: 0.5rem;
-  margin-top: 2rem;
+  margin-top: 1rem;
   cursor: pointer;
   transition: all 0.3s;
 }
 
 .btn:hover {
-  box-shadow: 0.1rem 0.1rem 0.1rem rgb(59, 59, 59);
+  box-shadow: 0.4rem 0.4rem 0.2rem rgb(59, 59, 59);
 }
 
 .joke,
@@ -69,26 +69,30 @@ h3 {
 }
 
 .joke {
-  font-size: 1.4rem;
+  font-size: 4.5rem;
 }
 
 .punch {
-  margin-top: 0.4rem;
+  margin: 2rem 0;
+  font-size: 3.5rem;
+  color: rgb(194, 255, 175);
 }
 
 @media screen and (max-width: 480px) {
-    body{
-        padding: 0;
-    }
+  body {
+    padding: 0;
+  }
   .container {
-    height: 15rem;
     width: 100%;
-    border: 5px solid whitesmoke ;
+    border: 10px solid whitesmoke;
   }
   .punch {
-      font-size: 1.4rem;
+    font-size: 2.5rem;
   }
-  .joke{
-      font-size: 2rem;
+  .joke {
+    font-size: 3.2rem;
+  }
+  h1{
+      font-size: 1.8rem;
   }
 }
