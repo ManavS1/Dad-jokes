@@ -1,0 +1,94 @@
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  outline: none;
+  list-style-type: none;
+}
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: serif;
+  font-weight: 400;
+  height: 100vh;
+  width: 100vw;
+  background-color: #dcdfe3;
+  padding: 0rem 10rem;
+}
+
+h3 {
+  text-align: center;
+  font-weight: 900;
+  padding: 0.5rem 0;
+  background-color: teal;
+  color: whitesmoke;
+}
+
+.container {
+  background-color: #4487cd;
+  padding: 0rem 1rem;
+  color: whitesmoke;
+  height: 10rem;
+  width: 100%;
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid black;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 0.5rem;
+}
+
+.btn {
+  background-color: #b025b9;
+  border: none;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  margin-top: 2rem;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.btn:hover {
+  box-shadow: 0.1rem 0.1rem 0.1rem rgb(59, 59, 59);
+}
+
+.joke,
+.punch {
+  font-weight: 600;
+}
+
+.joke {
+  font-size: 1.4rem;
+}
+
+.punch {
+  margin-top: 0.4rem;
+}
+
+@media screen and (max-width: 480px) {
+    body{
+        padding: 0;
+    }
+  .container {
+    height: 15rem;
+    width: 100%;
+    border: 5px solid whitesmoke ;
+  }
+  .punch {
+      font-size: 1.4rem;
+  }
+  .joke{
+      font-size: 2rem;
+  }
+}
